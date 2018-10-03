@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/vaio/catkin_ws/src/my_pcl_tutorial/devel/setup.sh

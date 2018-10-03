@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<robot name="pa10" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Import all Gazebo-customization elements, including Gazebo colors -->
+  <xacro:include filename="$(find pa10_description)/urdf/pa10.gazebo" />
+  <!-- Import Rviz colors -->
+  <xacro:include filename="$(find pa10_description)/urdf/materials.xacro" />
+  <!-- Import gripper -->
+  <xacro:include filename="$(find pg70_description)/urdf/pg70.urdf.xacro" />
+  <!-- Used for fixing robot to Gazebo 'base_link' -->
+  <link name="world"/>
+
+  <joint name="fixed" type="fixed">
+    <parent link="world"/>
+    <child link="link0"/>
+    <origin rpy="0 0 0.523" xyz="0 0 .79"/>
+  </joint>
+
+
+  <link name="link0">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://pa10_description/meshes/pa10/visual/link0_mesh.stl" scale="1 1 1" />
+      </geometry>
+      <material name="cyan" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://pa10_description/meshes/pa10/collision/link0_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+  </link>
+  <link name="link1">
+    <visual>
+      <origin xyz="0 0 -0.315" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://pa10_description/meshes/pa10/visual/link1_mesh.stl" scale="1 1 1" />
+      </geometry>
+      <material name="grey" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.315" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://pa10_description/meshes/pa10/collision/link1_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+  </link>
+  <link name="link2">
+    <visual>
+      <origin xyz="0 0 -0.315" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://pa10_description/meshes/pa10/visual/link2_mesh.stl" scale="1 1 1" />
+      </geometry>
+      <material name="cyan" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.315" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://pa10_description/meshes/pa10/collision/link2_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+  </link>
+  <link name="link3">
+    <visual>
+      <origin xyz="0 0 -0.315" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://pa10_description/meshes/pa10/visual/link3_mesh.stl" scale="1 1 1" />
+      </geometry>
+      <material name="grey" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.315" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://pa10_description/meshes/pa10/collision/link3_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+  </link>
+  <link name="link4">
+    <visual>
+      <origin xyz="0 0 -0.765" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://pa10_description/meshes/pa10/visual/link4_mesh.stl" scale="1 1 1" />
+      </geometry>
+      <material name="cyan" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.765" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://pa10_description/meshes/pa10/collision/link4_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+  </link>
+  <link name="link5">
+    <visual>
+      <origin xyz="0 0 -0.765" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://pa10_description/meshes/pa10/visual/link5_mesh.stl" scale="1 1 1" />
+      </geometry>
+      <material name="grey" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.765" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://pa10_description/meshes/pa10/collision/link5_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+  </link>
+  <link name="link6">
+    <visual>
+      <origin xyz="0 0 -1.265" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://pa10_description/meshes/pa10/visual/link6_mesh.stl" scale="1 1 1" />
+      </geometry>
+      <material name="cyan" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 -1.265" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://pa10_description/meshes/pa10/collision/link6_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+  </link>
+  <link name="link7">
+    <visual>
+      <origin xyz="0 0 1.35" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://pa10_description/meshes/pa10/visual/link7_mesh.stl" scale="1 1 1" />
+      </geometry>
+      <material name="grey" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 1.35" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://pa10_description/meshes/pa10/collision/link7_mesh.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1" />
+      <origin xyz="0 0 2.22045e-16" rpy="0 -0 0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+  </link>
+  <joint name="joint_1" type="revolute">
+    <parent link="link0"/>
+    <child  link="link1"/>
+    <origin xyz="0 0 0.315" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-3.08923" upper="3.08923" effort="100000" velocity="0.4" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="joint_2" type="revolute">
+    <parent link="link1"/>
+    <child  link="link2"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-1.58825" upper="1.58825" effort="100000" velocity="0.4" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="joint_3" type="revolute">
+    <parent link="link2"/>
+    <child  link="link3"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-3.03687" upper="3.03687" effort="100000" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="joint_4" type="revolute">
+    <parent link="link3"/>
+    <child  link="link4"/>
+    <origin xyz="0 0 0.450" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-2.3911" upper="2.3911" effort="100000" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="joint_5" type="revolute">
+    <parent link="link4"/>
+    <child  link="link5"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-4.45059" upper="4.45059" effort="100000" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="joint_6" type="revolute">
+    <parent link="link5"/>
+    <child  link="link6"/>
+    <origin xyz="0 0 0.5" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-2.87979" upper="2.87979" effort="100000" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <joint name="joint_7" type="continuous">
+    <parent link="link6"/>
+    <child  link="link7"/>
+    <origin xyz="0 0 0.085" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-3.14159" upper="3.14159" effort="100000" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+    <!--<safety_controller k_position="100" k_velocity="1.5" soft_lower_limit="-2.857" soft_upper_limit="2.857"/>-->
+  </joint>
+
+  <!-- gripper -->
+  <xacro:schunk_pg70 name="gripper" parent="link7">
+      <origin xyz="0 0 0.02" rpy="0 0 0" />
+  </xacro:schunk_pg70>
+</robot>

@@ -1,0 +1,24 @@
+<package>
+  <name>pg70_description</name>
+  <version>0.0.1</version>
+  <description>pg70_description</description>
+ 
+  <license>LGPL</license>
+
+  <url type="website">http://ros.org/wiki/schunk_description</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <maintainer email="fmw@ipa.fhg.de">Florian Weisshardt</maintainer>
+  <author email="fmw@ipa.fhg.de">Florian Weisshardt</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>gazebo_ros</run_depend>
+
+  <test_depend>gtest</test_depend>
+  <test_depend>urdfdom</test_depend>
+
+  <export>
+    <gazebo_ros gazebo_media_path="${prefix}"/>
+  </export>
+</package>

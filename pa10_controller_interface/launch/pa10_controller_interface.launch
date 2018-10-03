@@ -1,0 +1,20 @@
+<launch>
+
+  <!-- This launch file provides a simulated industrial robot
+
+       Several nodes are started, to simulate low-level robot communication
+       and higher-level actionlib support:
+         - industrial_robot simulator : accepts motion commands and publishes robot state
+         - joint_trajectory_action : actionlib interface to control robot motion
+
+    Usage:
+      robot_interface_simulator.launch
+  -->
+
+<param name="motion_update_rate" value="15" />
+  <!-- industrial_robot_simulator: accepts robot commands and reports status -->
+  <!-- <node name="pa10_controller_interface" pkg="pa10_controller_interface" type="pa10_controller_interface.py" /> -->
+  <!-- joint_trajectory_action: provides actionlib interface for high-level robot control -->
+  <node pkg="industrial_robot_client" type="joint_trajectory_action" name="joint_trajectory_action"/>
+
+</launch>

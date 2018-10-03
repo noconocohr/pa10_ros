@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<sdf version="1.2">
+  <model name="scene">
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+         <mesh>
+           <uri>model://scene/meshes/table.dae</uri>
+          </mesh> 
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://scene/meshes/table.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+
+
+
+<collision name="collision2">
+        <geometry>
+         <mesh>
+           <uri>model://scene/meshes/fence1.dae</uri>
+          </mesh> 
+        </geometry>
+      </collision>
+      <visual name="visual2">
+        <geometry>
+          <mesh>
+            <uri>model://scene/meshes/fence1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+
+
+<collision name="collision3">
+        <geometry>
+         <mesh>
+           <uri>model://scene/meshes/conveyorBelt.dae</uri>
+          </mesh> 
+        </geometry>
+      </collision>
+      <visual name="visual3">
+        <geometry>
+          <mesh>
+            <uri>model://scene/meshes/conveyorBelt.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+
+
+<collision name="collision4">
+        <geometry>
+         <mesh>
+           <uri>model://scene/meshes/Finger.dae</uri>
+          </mesh> 
+        </geometry>
+      </collision>
+      <visual name="visual4">
+        <geometry>
+          <mesh>
+            <uri>model://scene/meshes/Finger.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+
+
+<collision name="collision5">
+        <geometry>
+         <mesh>
+           <uri>model://scene/meshes/foot.dae</uri>
+          </mesh> 
+        </geometry>
+      </collision>
+      <visual name="visual5">
+        <geometry>
+          <mesh>
+            <uri>model://scene/meshes/foot.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+
+
+
+
+
+    </link>
+
+  </model>
+</sdf>

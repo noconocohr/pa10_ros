@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<robot>
+    <gazebo reference="link0">
+        <material>Gazebo/White</material>
+    </gazebo>
+
+    <gazebo reference="link1">
+        <material>Gazebo/Orange</material>
+    </gazebo>
+
+    <gazebo reference="link2">
+        <material>Gazebo/White</material>
+    </gazebo>
+
+    <gazebo reference="link3">
+        <material>Gazebo/Orange</material>
+    </gazebo>
+
+    <gazebo reference="link4">
+        <material>Gazebo/White</material>
+    </gazebo>
+
+    <gazebo reference="link5">
+        <material>Gazebo/Orange</material>
+    </gazebo>
+
+    <gazebo reference="link6">
+        <material>Gazebo/White</material>
+    </gazebo>
+
+    <gazebo reference="link7">
+        <material>Gazebo/Orange</material>
+    </gazebo>
+</robot>
