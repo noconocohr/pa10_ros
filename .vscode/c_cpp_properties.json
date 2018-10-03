@@ -1,20 +1,22 @@
 {
-  "configurations": [
-    {
-      "browse": {
-        "databaseFilename": "",
-        "limitSymbolsToIncludedHeaders": true
-      },
-      "includePath": [
-        "/home/rikuto/catkin_ws/devel/include",
-        "/opt/ros/kinetic/include",
-        "/home/rikuto/catkin_ws/src/beginner_tutorials/include",
-        "/home/rikuto/catkin_ws/src/create_autonomy/ca_driver/include",
-        "/home/rikuto/catkin_ws/src/ex_roomba/include",
-        "/home/rikuto/catkin_ws/src/roomba_joy/include",
-        "/usr/include"
-      ],
-      "name": "Linux"
-    }
-  ]
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/rikuto/catkin_ws/devel/include",
+                "/opt/ros/kinetic/include",
+                "/home/rikuto/catkin_ws/src/beginner_tutorials/include",
+                "/home/rikuto/catkin_ws/src/create_autonomy/ca_driver/include",
+                "/home/rikuto/catkin_ws/src/ex_roomba/include",
+                "/home/rikuto/catkin_ws/src/roomba_joy/include",
+                "/usr/include"
+            ],
+            "name": "Linux",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
 }
