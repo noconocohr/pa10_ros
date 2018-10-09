@@ -3,7 +3,6 @@
     <param name="robot_description" command="$(find xacro)/xacro.py '$(find pa10_description)/urdf/pa10.xacro'"/>
 
     <param name="use_gui" value="$(arg gui)"/>
-    <node name="joint_sauce_publisher" pkg="pa10" type="joint_state_pub"/> 
     <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
     	<rosparam param="source_list">["/pa10/joint_states"]</rosparam>
     </node>
