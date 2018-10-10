@@ -10,10 +10,12 @@ forked from akrouch-robi in bitbucket
 sudo apt-get install ros-kinetic-industrial-core ros-kinetic-industrial-robot-client ros-kinetic-industrial-robot-simulator
 ```
 
-1. build source
+2. build source
 
 ```sh
 cd ~/<Your Workspace>/
 catkin_make
 catkin build #if you use catkin_tools
 ```
+
+Please see wiki page.
