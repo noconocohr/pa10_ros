@@ -18,4 +18,4 @@ catkin_make
 catkin build #if you use catkin_tools
 ```
 
-Please see wiki page.
+Please see pa10_tutor repo [here](https://github.com/noconocohr/pa10_tutor).
