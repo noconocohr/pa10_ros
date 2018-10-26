@@ -1,5 +1,5 @@
 <launch>
-  <!-- gazeboo -->
+  <!-- gazebo -->
   <include file="$(find pa10_gazebo)/launch/pa10.launch" />   
 
   <!-- By default, we do not start a database (it can be large) -->
@@ -16,7 +16,7 @@
   <!-- controller -->
   <rosparam file="$(find pa10_moveit_config)/config/trajectory_control.yaml" command="load"/>
   <node name="pa10_controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="/pa10" args="pa10_joint_controller joint_state_controller"/>
-  
+
 
   <!-- Run the main MoveIt executable without trajectory execution (we do not have controllers configured by default) -->
   <include file="$(find pa10_moveit_config)/launch/move_group.launch">
