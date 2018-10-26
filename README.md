@@ -7,6 +7,10 @@ forked from akrouch-robi in bitbucket
 1. Install dependencies
 
 ```sh
+# MoveIt! packages for ROS Kinetic
+sudo apt install ros-kinetic-moveit*
+
+# Industrial packages
 sudo apt-get install ros-kinetic-industrial-core ros-kinetic-industrial-robot-client ros-kinetic-industrial-robot-simulator
 ```
 
